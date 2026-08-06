@@ -5,14 +5,18 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import HomePage from './assets/pages/Home'
 import NavbarComponent from './assets/components/NavbarComponent'
+import GiftListComponent from './assets/components/GiftListComponent'
+import Location from './assets/components/Location'
+import AboutUs from './assets/components/AboutUs'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       {/* <NavbarComponent /> */}
       <HomePage />
+      <GiftListComponent />
+      <Location />
+      <AboutUs />
     </>
   )
 }

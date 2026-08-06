@@ -1,0 +1,169 @@
+/* Variables basadas en los tonos de tu diseño */
+:root {
+  --bg-color: #f1e6f5; /* Color base por si la imagen tarda en cargar */
+  --text-main: #6c5484;
+  --text-light: #9480a6;
+  --font-serif: 'Times New Roman', serif; /* A reemplazar con tu fuente Serif */
+  --font-sans: 'Arial', sans-serif;       /* A reemplazar con tu fuente Sans */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.location-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Imagen de fondo con las flores en las esquinas */
+.floral-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+/* Contenido Principal */
+.location-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--text-main);
+}
+
+/* Corazones generales */
+.heart-icon {
+  color: var(--text-light);
+  font-size: 1rem;
+}
+.small-heart { font-size: 0.8rem; }
+.top-heart { margin-bottom: 10px; }
+.mid-heart { margin-bottom: 20px; }
+
+/* Divisores CSS (En caso de no usar imágenes para estos) */
+.divider-line {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 50%;
+  max-width: 200px;
+  margin-bottom: 15px;
+}
+.divider-line .line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: var(--text-light);
+  opacity: 0.5;
+}
+.divider-line .diamond {
+  font-size: 0.5rem;
+  color: var(--text-light);
+}
+
+.divider-dots {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  color: var(--text-light);
+}
+.divider-dots .dot {
+  font-size: 1.2rem;
+  line-height: 0;
+}
+
+/* Textos */
+.section-title {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-weight: normal;
+  letter-spacing: 4px;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+.description-text {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  line-height: 1.8;
+  color: var(--text-light);
+  margin-bottom: 20px;
+}
+
+/* Imágenes */
+.branch-img {
+  width: 100%;
+  max-width: 220px;
+  margin-bottom: 15px;
+}
+
+.photo-container {
+  width: 100%;
+  max-width: 350px;
+  margin-bottom: 25px;
+  /* Ligera sombra opcional para resaltar la foto sobre el fondo */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+  border-radius: 12px;
+  overflow: hidden; /* Asegura que la imagen respete el border-radius */
+}
+
+.location-photo {
+  width: 100%;
+  height: auto;
+  display: block; /* Elimina el espacio fantasma debajo de las imágenes */
+}
+
+/* Info de Ubicación */
+.location-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.pin-icon {
+  width: 28px;
+  margin-bottom: 10px;
+}
+
+.location-name {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.location-city {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  color: var(--text-main);
+}
+
+/* Divisor Inferior */
+.bottom-divider {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: var(--text-light);
+  font-size: 1.2rem;
+  margin-top: 10px;
+}

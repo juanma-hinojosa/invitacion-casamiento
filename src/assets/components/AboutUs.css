@@ -1,0 +1,185 @@
+:root {
+  --bg-color: #f1e6f5;
+  --text-main: #6c5484;
+  --text-light: #9480a6;
+  --border-purple: #c5aecd;
+  --font-serif: 'Times New Roman', serif; /* Reemplazar por fuente Serif elegida */
+  --font-sans: 'Arial', sans-serif;       /* Reemplazar por fuente Sans elegida */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.about-us-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: var(--text-main);
+}
+
+.floral-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+/* Header */
+.top-header {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px;
+  width: 100%;
+  border-bottom: 1px solid rgba(197, 174, 205, 0.3); /* Línea sutil debajo del header */
+}
+
+.logo-text {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+}
+
+.hamburger-menu {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.hamburger-menu span {
+  display: block;
+  width: 28px;
+  height: 1px;
+  background-color: var(--text-main);
+}
+
+/* Contenido Principal */
+.about-us-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px 20px 50px 20px;
+}
+
+.section-title {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  font-weight: normal;
+  letter-spacing: 5px;
+  margin-bottom: 15px;
+}
+
+/* Foto en Arco */
+
+
+.arch-border-inner {
+  width: 100%;
+  height: 100%;
+}
+
+
+.couple-photo {
+  width: 100%;
+  height: auto;
+  /* aspect-ratio: 3 / 4; Proporción para asegurar que sea más alta que ancha */
+  /* object-fit: cover; Asegura que la foto llene el contenedor sin deformarse */
+  /* display: block; */
+  /* border-radius: 200px 200px 0 0; */
+}
+
+/* Divisores */
+.divider-complex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 70%;
+  max-width: 250px;
+  color: var(--text-light);
+}
+
+.divider-complex .line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: var(--border-purple);
+}
+
+.divider-complex .dot {
+  font-size: 0.8rem;
+  line-height: 0;
+}
+
+.heart-icon {
+  font-size: 0.9rem;
+}
+
+.divider-arrows {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: var(--text-light);
+  font-size: 1.1rem;
+  margin: 20px 0;
+}
+
+.divider-bottom {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 50%;
+  max-width: 180px;
+  margin-top: 15px;
+}
+
+.divider-bottom .line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: var(--border-purple);
+}
+
+.heart-outline {
+  font-size: 1.5rem;
+  color: var(--text-light);
+  font-weight: 300;
+  line-height: 1;
+}
+
+/* Textos */
+.story-text {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  color: var(--text-main);
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+.thank-you-text {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--text-main);
+  margin-bottom: 25px;
+}
