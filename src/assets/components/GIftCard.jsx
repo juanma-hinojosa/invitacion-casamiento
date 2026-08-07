@@ -15,4 +15,4 @@ const GiftCard = ({ product }) => {
   );
 };
 
-export default GiftCard;
+export default GiftCard;     
