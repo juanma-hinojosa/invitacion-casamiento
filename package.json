@@ -12,7 +12,8 @@
   "dependencies": {
     "@iconify-react/bxs": "^1.0.2",
     "react": "^19.2.8",
-    "react-dom": "^19.2.8"
+    "react-dom": "^19.2.8",
+    "swiper": "^14.1.0"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",

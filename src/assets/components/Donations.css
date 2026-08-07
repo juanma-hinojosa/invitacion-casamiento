@@ -1,0 +1,60 @@
+:root {
+  --text-main: #6c5484;
+  --text-light: #9480a6;
+  --border-purple: #c5aecd;
+}
+
+.donations-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  background-color: #f1e6f5;
+  color: var(--text-main);
+}
+
+.floral-background {
+  position: absolute; width: 100%; height: 100%; z-index: 0;
+  background-size: cover; background-position: center;
+}
+
+.donations-content {
+  position: relative; z-index: 1; padding: 20px;
+  display: flex; flex-direction: column; align-items: center; text-align: center;
+}
+
+.crest-placeholder { 
+  width: 80px; height: 80px; border: 1px solid var(--border-purple); 
+  border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  margin-bottom: 20px;
+}
+
+.main-title { font-family: serif; font-size: 1.5rem; margin-bottom: 10px; }
+
+.help-icons { display: flex; gap: 30px; font-size: 2rem; margin: 20px 0; color: var(--text-light); }
+
+.payment-block {
+  width: 100%; max-width: 400px; margin-bottom: 20px;
+  text-align: left;
+}
+
+.payment-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+.payment-logo { height: 25px; }
+
+.input-row { display: flex; align-items: center; gap: 10px; margin-top: 5px; }
+.input-row input { 
+  flex-grow: 1; padding: 10px; border: 1px solid var(--border-purple); 
+  background: white; color: var(--text-light); border-radius: 4px;
+}
+
+.goals-section { width: 100%; max-width: 400px; margin-top: 20px; }
+.progress-bar { height: 10px; background: #ddd; border-radius: 5px; overflow: hidden; }
+.progress-fill { height: 100%; background: var(--text-main); }
+.goals-list { list-style: none; text-align: left; margin-top: 15px; }
+.goals-list li { margin-bottom: 8px; display: flex; align-items: center; gap: 10px; }
+
+/* Ajustes de Header */
+.top-header { display: flex; justify-content: space-between; align-items: center; padding: 20px; }
+.menu-container { display: flex; align-items: center; gap: 5px; font-size: 0.9rem; }
+.menu-icon { font-size: 1.5rem; }

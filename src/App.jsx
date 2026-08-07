@@ -8,15 +8,19 @@ import NavbarComponent from './assets/components/NavbarComponent'
 import GiftListComponent from './assets/components/GiftListComponent'
 import Location from './assets/components/Location'
 import AboutUs from './assets/components/AboutUs'
+import Donations from './assets/components/Donation'
+import GiftCarousel from './assets/components/GiftCarousel'
 
 function App() {
   return (
     <>
       {/* <NavbarComponent /> */}
       <HomePage />
-      <GiftListComponent />
       <Location />
       <AboutUs />
+      <Donations />
+      <GiftListComponent />
+      {/* <GiftCarousel /> */}
     </>
   )
 }

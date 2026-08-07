@@ -1,0 +1,131 @@
+/* --- Estilos del Componente Padre (Carrusel) --- */
+/* --- Contenedor del Carrusel --- */
+.carousel-section {
+  width: 100%;
+  max-width: 900px; /* Un poco más de margen para desktop */
+  margin: 0 auto;
+  padding: 30px 0;
+  background-color: transparent;
+  text-align: center;
+}
+
+.carousel-title {
+  font-family: 'Times New Roman', serif;
+  font-size: 1.6rem; /* Un poco más pequeño para mobile */
+  color: #6c5484;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.carousel-container {
+  width: 100%;
+  padding: 0 10px; /* Quitamos el 40px de aquí, se lo damos al Swiper directamente */
+  box-sizing: border-box;
+}
+
+/* Modificando los colores de los puntitos de Swiper para que coincidan con tu diseño */
+.swiper-pagination-bullet {
+  background-color: #c5aecd;
+  opacity: 0.6;
+}
+.swiper-pagination-bullet-active {
+  background-color: #6c5484;
+  opacity: 1;
+}
+
+/* --- Estilos del Componente Hijo (Card) --- */
+.gift-card {
+  background-color: #ffffff;
+  border: 1px solid #d1bdd6;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(108, 84, 132, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  /* Transición para un leve efecto al tocar/pasar el mouse */
+  transition: transform 0.3s ease;
+  /* CLAVE PARA MOBILE: Límite máximo de ancho */
+  max-width: 260px; 
+  margin: 0 auto; /* Centra la tarjeta dentro de su propio Slide */
+}
+
+.gift-image-container {
+  width: 100%;
+  height: 200px;
+  background-color: #f1e6f5; /* Color de fondo mientras carga la imagen */
+  overflow: hidden;
+}
+
+.gift-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que la imagen no se deforme */
+}
+
+.gift-info {
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1; /* Empuja el botón hacia abajo si el título es corto */
+}
+
+.gift-title {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #6c5484;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.gift-price {
+  font-family: 'Times New Roman', serif;
+  font-size: 1.3rem;
+  color: #9480a6;
+  margin-bottom: 20px;
+}
+
+.gift-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #6c5484;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-family: 'Arial', sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: auto;
+  transition: background-color 0.3s ease;
+}
+
+.gift-button:active {
+  background-color: #533e66; /* Un tono más oscuro al presionar en móviles */
+}
+
+/* --- Media Queries para pantallas más grandes (Tablets/Desktop) --- */
+@media (min-width: 600px) {
+  .carousel-title {
+    font-size: 2rem;
+  }
+  
+  .gift-card {
+    max-width: 100%; /* En tablet/desktop permitimos que Swiper controle el ancho total */
+  }
+
+  .gift-info {
+    padding: 20px;
+  }
+
+  .gift-title {
+    font-size: 1.1rem;
+  }
+
+  .gift-price {
+    font-size: 1.3rem;
+  }
+}

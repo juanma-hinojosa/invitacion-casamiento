@@ -1,4 +1,6 @@
+import { Icon } from "@iconify/react";
 import CountdownTimer from "../components/CountdownTimer";
+import Logo from "../../../public/logo.png"
 
 function HomePage() {
 
@@ -25,7 +27,8 @@ function HomePage() {
         {/* Sección Principal */}
         <main className="main-section">
           <div className="initials-crest">
-            <span className="initials">R | J</span>
+            {/* <span className="initials">R | J</span> */}
+            <img src={Logo}style={{width:'30%'}} />
           </div>
 
           <p className="subtitle">¡NOS CASAMOS!</p>
@@ -53,7 +56,8 @@ function HomePage() {
 
           {/* Caja de Horario */}
           <div className="time-box">
-            <div className="clock-icon">🕒</div>
+            <Icon icon='mdi-light:clock' className="clock-icon" />
+            {/* <div className="clock-icon">🕒</div> */}
             <div className="time-info">
               <p className="time-box-label">HORARIO DE LA BODA</p>
               <p className="time-box-value">9:30 de la mañana</p>
