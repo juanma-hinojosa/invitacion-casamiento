@@ -1,5 +1,7 @@
 import './AboutUs.css';
 import Nosotros from "../../../public/nosotros.png"
+import Us from "../../../public/us.png"
+
 const AboutUs = () => {
   return (
     <div className="about-us-wrapper">
@@ -35,7 +37,7 @@ const AboutUs = () => {
         <div className="arch-photo-container">
           <div className="arch-border-inner">
             <img 
-              src={Nosotros}
+              src={Us}
               alt="Rafaela y Juan" 
               className="couple-photo"
             />
