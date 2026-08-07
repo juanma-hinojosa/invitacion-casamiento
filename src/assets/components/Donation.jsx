@@ -17,19 +17,19 @@ const Donations = () => {
 
       <main className="donations-content">
         {/* <div className="crest-placeholder"> */}
-          {/* <span className="initials">R | J</span> */}
-          <img src={Logo} alt="" style={{width:'40%'}}/>
+        {/* <span className="initials">R | J</span> */}
+        <img src={Logo} alt="" style={{ width: '40%' }} />
         {/* </div> */}
 
         <h1 className="main-title">Lista de Regalos Virtual:<br />Donaciones</h1>
         <span className="heart-icon">♥</span>
 
         <p className="description">
-Lo más importante para nosotros es poder compartir este momento tan especial con ustedes. Si además desean hacernos un regalo, cualquier aporte, grande o pequeño, nos ayudará a dar los primeros pasos en esta nueva etapa: construir nuestro hogar y hacer realidad nuestra luna de miel.
-<br /><br />
-Cada gesto significa muchísimo para nosotros, y lo recibiremos con enorme cariño y gratitud.
-<br /><br />
-¡Gracias por acompañarnos y por ser parte de este nuevo comienzo!
+          Lo más importante para nosotros es poder compartir este momento tan especial con ustedes. Si además desean hacernos un regalo, cualquier aporte, grande o pequeño, nos ayudará a dar los primeros pasos en esta nueva etapa: construir nuestro hogar y hacer realidad nuestra luna de miel.
+          <br /><br />
+          Cada gesto significa muchísimo para nosotros, y lo recibiremos con enorme cariño y gratitud.
+          <br /><br />
+          ¡Gracias por acompañarnos y por ser parte de este nuevo comienzo!
         </p>
 
         <h2 className="subtitle">¿Cómo nos puedes ayudar?</h2>
@@ -72,7 +72,7 @@ Cada gesto significa muchísimo para nosotros, y lo recibiremos con enorme cari�
           </div>
         </div>
 
-        
+
       </main>
     </div>
   );
