@@ -24,9 +24,15 @@ const Donations = () => {
         <h1 className="main-title">Lista de Regalos Virtual:<br />Donaciones</h1>
         <span className="heart-icon">♥</span>
 
-        <p className="description">Tu apoyo nos ayuda a construir nuestro hogar y luna de miel. ¡Muchas gracias!</p>
+        <p className="description">
+Lo más importante para nosotros es poder compartir este momento tan especial con ustedes. Si además desean hacernos un regalo, cualquier aporte, grande o pequeño, nos ayudará a dar los primeros pasos en esta nueva etapa: construir nuestro hogar y hacer realidad nuestra luna de miel.
+<br /><br />
+Cada gesto significa muchísimo para nosotros, y lo recibiremos con enorme cariño y gratitud.
+<br /><br />
+¡Gracias por acompañarnos y por ser parte de este nuevo comienzo!
+        </p>
 
-        <h2 className="subtitle">Cómo nos puedes ayudar</h2>
+        <h2 className="subtitle">¿Cómo nos puedes ayudar?</h2>
         <div className="help-icons">
           <Icon icon="mdi:heart-outline" />
           <Icon icon="mdi:currency-usd" />
